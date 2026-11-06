@@ -3,7 +3,7 @@
 /**
  * print_line - draws a straight line in the terminal.
  *
- * n is the number 
+ * @n is the number of underscore to prin
  * Return: void
  */
 void print_line(int n)
