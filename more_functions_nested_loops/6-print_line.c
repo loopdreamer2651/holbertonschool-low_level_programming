@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_line - draws a straight line in the terminal.
+ * print_line - draws a straight line in the terminal
+ * @n: the number of underscores to print
  *
- * @n is the number of underscore to prin
  * Return: void
  */
 void print_line(int n)
