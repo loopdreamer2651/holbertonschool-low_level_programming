@@ -28,6 +28,7 @@ int main(void)
 				scanf("%f", &a);
 				printf("B: ");
                                 scanf("%f", &b);
+				printf("Result: %f\n", a + b);
 				break;
 			case 2:
 				printf("[Execution placeholder for Subtraction]\n\n");
