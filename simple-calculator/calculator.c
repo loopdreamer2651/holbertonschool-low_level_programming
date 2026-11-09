@@ -38,7 +38,11 @@ int main(void)
                                 printf("Result: %f\n", a - b);
 				break;
 			case 3:
-				printf("[Execution placeholder for Multiplication]\n\n");
+				printf("A: ");
+                                scanf("%f", &a);
+                                printf("B: ");
+                                scanf("%f", &b);
+                                printf("Result: %f\n", a * b);
 				break;
 			case 4:
 				printf("[Execution placeholder for Division]\n\n");
