@@ -14,6 +14,8 @@ int get_choice(void);
 int main(void)
 {
 	int current_choice;
+	float a;
+	float b;
 
 	do
 	{
@@ -22,7 +24,10 @@ int main(void)
 		switch (current_choice)
         	{
 			case 1:
-				printf("[Execution placeholder for Addition]\n\n"); 
+				printf("A: ");
+				scanf("%f", &a);
+				printf("B: ");
+                                scanf("%f", &b);
 				break;
 			case 2:
 				printf("[Execution placeholder for Subtraction]\n\n");
