@@ -13,10 +13,11 @@ Across 3 runs, three phases shows different costs, even though they iterate over
 
 | Phase | Run 1 (s) | Run 2 (s) | Run 3 (s) | Average (s) | Relative Cost | Dominant Operation |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **TOTAL** | **0.000776** | **0.000769** | **0.000754** | **0.000766** | --- | --- |
 | **BUILD_DATA** | 0.000295 | 0.000303 | 0.000303 | 0.000300 | Low - Moderate | One LCG step (multiply + add) plus a modulo per element |
 | **PROCESS** | 0.000345 | 0.000330 | 0.000315 | 0.000330 | Highest | Multiply, signed division, signed modulo, comparison, conditional negation per element |
 | **REDUCE** | 0.000136 | 0.000136 | 0.000136 | 0.000136 | Low | One multiply and one add per element (rolling hash) |
-| **TOTAL** | **0.000776** | **0.000769** | **0.000754** | **0.000766** | --- | --- |
+
  
 The key observation is that PROCESS is consistently the most expensive phase, despite touching the same amount of memory as the others. The reason is instruction cost. Integer division and modulo are the slower scalar operation compare to one cycle of multiply or add), and PROCESS perform both division and modulo for every element. 
 The BUILD_DATA phase also has modulo but only one, and REDUCE does not, hence shorter run time. 
