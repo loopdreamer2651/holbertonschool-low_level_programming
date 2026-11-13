@@ -19,7 +19,7 @@ char *cap_string(char *s)
 	{
 		for (j = 0; delim[j] != '\0'; j++)
 		{
-			if (s[i - 1] == delim[j])
+			if (s[i - 1] == delim[j] || i == 0)
 				isdelim = 1;
 		}
 
