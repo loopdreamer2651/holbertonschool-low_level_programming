@@ -2,10 +2,10 @@
 #include <stdlib.h>
 /**
  * alloc_grid - returns the generated 2D array
- * @width - desired width of the array
- * @height - desired height of the array
+ * @width: desired width of the array
+ * @height: desired height of the array
  *
- * Return - returns a double pointer to generated array
+ * Return: returns a double pointer to generated array
 **/
 
 int **alloc_grid(int width, int height)
