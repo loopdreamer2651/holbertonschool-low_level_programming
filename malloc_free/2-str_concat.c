@@ -1,9 +1,16 @@
 #include "main.h"
 #include <stdlib.h>
+/**
+ * str_concat - concatenates two strings into newly allocated memory
+ * @s1: first string (NULL treated as "")
+ * @s2: second string (NULL treated as "")
+ *
+ * Return: pointer to new string, or NULL on failure
+ */
 
 char *str_concat(char *s1, char *s2)
 {
-	int size1 ;
+	int size1;
 	int i;
 	int j;
 	int size2;
