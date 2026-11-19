@@ -17,13 +17,13 @@ typedef struct dog
 	float age;
 	char *owner;
 } dog;
+
 /**
  * dog_t - typedef for struct dog
  *
  * Description: Alias so callers can write `dog_t` instead of
  * `struct dog` or `dog`.
  */
-
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
