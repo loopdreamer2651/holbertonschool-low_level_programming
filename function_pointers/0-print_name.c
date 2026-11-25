@@ -1,9 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * @print_name - Applies a callback function to a given name string.
- *
- * This function safely invokes the provided callback `f`, passing the
+ * @print_name - This function safely invokes the provided callback `f`, passing the
  * `name` string to it. It performs basic null-pointer validation before
  * the callback is executed.
  *
