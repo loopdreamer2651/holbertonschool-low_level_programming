@@ -1,6 +1,13 @@
 #include "3-calc.h"
 #include <stdio.h>
-
+/**
+ * main - entry point for the calculator program
+ * @argc: number of command-line arguments
+ * @argv: array of command-line argument strings
+ *
+ * Return: 0 on success, 98 on wrong argument count,
+ *         99 on invalid operator, 100 on division/modulo by zero
+ */
 int main(int argc, char **argv)
 {
 	int (*op)(int, int);
