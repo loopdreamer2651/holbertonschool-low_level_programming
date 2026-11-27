@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-
 /**
  * print_all - Prints arguments of various types based on a format string
  * @format: String of type specifiers; each char selects the type of the
@@ -15,17 +14,14 @@
  *
  * Return: void
  */
-
 void print_all(const char * const format, ...)
 {
-
 	va_list args;
 	char *str;
 	unsigned int i;
 	char *sep = "";
 
 	va_start(args, format);
-
 	while (format != NULL && format[i] != '\0')
 	{
 		switch (format[i])
@@ -54,10 +50,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-
 	va_end(args);
-
 	printf("\n");
-
-	return;
 }
